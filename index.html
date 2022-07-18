@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Jam</title>
+	<LINK href="./gamestyle.css" rel="stylesheet" type="text/css">
+	<script type="module" src="./orthoRenderer.mjs"></script>
+	<script type="text/javascript" src="./howler.core.min.js"></script>
+	<script type="text/javascript" src="./levels.js"></script>
+	<script type="text/javascript" src="./singlefile.js"></script>
+	<script type="text/javascript" src="./csdata.js"></script>
+	<script type="module" src="./cs.mjs"></script>
+	<script type="text/javascript" src="./menu.js"></script>
+	
+</head>
+<body style="background-color:black;padding:0px;margin:0px;" class="noSelect">
+	<div id="main" class="noSelect"
+		 style="position:fixed;left:0px;top:0px;font-family:Courier New;">
+	</div>
+	<div id="menu">
+		<div class="middle" id="dvTitle">
+			<span>Game Title</span>
+		</div>
+		<div class="middle" id="dvLoading"><span>Loading<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div></span></div>
+		<div class="hidden middle clickable" id="dvNewGame"><span>New Game</span><div class="hidden" id="dvRipple"><div></div><div></div></div></div>
+		<div class="hidden middle clickable" id="dvLoadGame">
+			<span>Load Game</span>
+		</div>
+		<div class="hidden" id="dvOptions">
+			<div class="optionButton clickable" id="dvBGM">
+				BGM <span id="spnBgmYes">Yes</span> <span id="spnBgmNo" class="hidden">No</span>
+			</div>
+			<div class="optionButton clickable" id="dvSFX">
+				SFX <span id="spnSfxYes">Yes</span> <span id="spnSfxNo" class="hidden">No</span>
+			</div>
+		</div>
+		<div class="parallaxbg">
+			<div class="sliding-background sliding-background-sky"></div>
+			<div class="sliding-background sliding-background-far"></div>
+			<div class="sliding-background sliding-background-mid"></div>
+			<div class="sliding-background sliding-background-close"></div>
+		</div>
+	</div>
+	<img name="b" src="./i/b.png">
+	<img name="c" src="./i/c.png">
+	<img name="pturn" src="./i/pturn.png">
+	<img name="eturn" src="./i/eturn.png">
+	
+	<img name="girl" src="./i/u/g.png">
+		
+	<img name="house_wall" src="./i/ah/house_wall.png">
+	
+	<img name="header" src="./i/header.png">
+	<img name="1" src="./eb/1.png">
+	<img name="2" src="./eb/2.png">
+	<img name="3" src="./eb/3.png">
+	<img name="4" src="./eb/4.png">
+	<img name="5" src="./eb/5.png">
+	<img name="6" src="./eb/6.png">
+	<img name="7" src="./eb/7.png">
+	<img name="8" src="./eb/8.png">
+	<img name="9" src="./eb/9.png">
+	<img name="1_top" src="./eb/1_top.png">
+	<img name="2_top" src="./eb/2_top.png">
+	<img name="3_top" src="./eb/3_top.png">
+	<img name="4_top" src="./eb/4_top.png">
+	<img name="5_top" src="./eb/5_top.png">
+	<img name="6_top" src="./eb/6_top.png">
+	<img name="7_top" src="./eb/7_top.png">
+	<img name="8_top" src="./eb/8_top.png">
+	<img name="9_top" src="./eb/9_top.png">
+	
+	
+	
+	<img name="level1" src="./lvl/level1.png">
+	<img name="level2" src="./lvl/level2.png">
+	<img name="level3" src="./lvl/level3.png">
+	<img name="level4" src="./lvl/level4.png">
+	<img name="level5" src="./lvl/level5.png">
+	<img name="level6" src="./lvl/level6.png">
+	<img name="level7" src="./lvl/level7.png">
+	<img name="level8" src="./lvl/level8.png">
+	<img name="level9" src="./lvl/level9.png">
+	
+	<img name="suite" src="./i/suite.png">
+	<img name="ch_aqua" src="./i/face/ch_aqua.png">
+	<img name="ch_brown" src="./i/face/ch_brown.png">
+	<img name="ch_pink" src="./i/face/ch_pink.png">
+	<img name="ch_purple" src="./i/face/ch_purple.png">
+	<img name="ch_unknown" src="./i/face/ch_unknown.png">
+	
+	<img name="font" src="./eb/font/font.png">
+	<img name="statbg" src="./i/statbg.png">
+	<img name="textbox" src="./i/textbox.png">
+</body></html>

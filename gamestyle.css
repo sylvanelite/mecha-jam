@@ -1,0 +1,214 @@
+html{
+	font-family:Arial;
+}
+
+
+img{
+	display:none;
+}
+canvas {
+    image-rendering: optimizeSpeed;
+    image-rendering: optimize-contrast;
+    image-rendering: pixelated;
+}
+
+
+#menu{
+	color:white;
+	width:256px;/*render_dimensions width*/
+	height:320px;/*render_dimensions height + y offset*/
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.hidden{
+	display: none!important;	
+}
+.optionButton{
+	width:10%;
+	margin-left:20%;
+	position:relative;
+	float: left;
+	padding-top:15px;
+}
+.middle{
+	width:100px;
+	margin: 0 auto;
+}
+#dvTitle{
+	animation: float 8s linear infinite;
+}
+#dvNewGame{
+	width:105px;
+}
+
+.clickable:hover{
+	color:red;
+}
+#dvRipple{
+	left:25%;
+	height:0px;
+	overflow: visible;
+	margin-top: -40px;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(2px);
+	}
+	50% {
+		transform: translatey(-2px);
+	}
+	100% {
+		transform: translatey(2px);
+	}
+}
+
+
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-top:-45px;
+  margin-left:-15px;
+}
+.lds-ripple div {
+  margin-top:-45px;
+  margin-left:-15px;
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+.parallaxbg {
+	top:0;
+	left:0;
+	overflow: hidden;
+	width:256px;
+	height:320px;
+	position:absolute;
+	z-index: -1;
+}
+  
+.sliding-background {
+  height: 144px;
+  width: 960px;
+  position:absolute;
+}
+@keyframes slide{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-480px, 0, 0);
+  }
+}
+
+.sliding-background-sky {
+  background: url("./eb/parallax/sCitySky.png") repeat-x;
+  animation: slide 100s linear infinite;
+  z-index: -1000;
+}
+.sliding-background-far {
+  background: url("./eb/parallax/sCityFar.png") repeat-x;
+  animation: slide 60s linear infinite;
+  z-index: -900;
+}
+  
+.sliding-background-mid {
+  background: url("./eb/parallax/sCityMid.png") repeat-x;
+  animation: slide 30s linear infinite;
+  z-index: -700;
+}
+.sliding-background-close {
+  background: url("./eb/parallax/sCityClose.png") repeat-x;
+  animation: slide 15s linear infinite;
+  z-index: -500;
+}
+
+
